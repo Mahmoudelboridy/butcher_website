@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>قائمة الطعام</title>
+<style>
+*{
+text-align:right;
+}
+#n1{
+background-color:#a8dadc;
+width:100%;
+height:110px;
+position:fixed;
+top:0px;
+left:0px;
+z-index:2;
+}
+#n2{
+padding:15px;
+font-weight:bold;
+font-size:20pt;
+font-family:"Garamond";
+color:#457b9d;
+position:absolute;
+right:15px;
+top:15px;
+}
+a{
+text-decoration:none;
+}
+#n5{
+width:35px;
+height:35px;
+position:absolute;
+bottom:8px;
+left:10px;
+}
+#n6{
+width:35px;
+height:35px;
+position:absolute;
+bottom:8px;
+left:60px;
+}
+#n7{
+width:35px;
+height:35px;
+position:absolute;
+bottom:8px;
+left:108px;
+}
+#n4{
+width:100%;
+height:50px;
+position:absolute;
+left:0px;
+right:0px;
+bottom:-700px;
+background-color:#a8dadc;
+}
+
+#n2:hover{
+background-color:#f1faee;
+}
+body{
+background-color:#f1faee;
+}
+#ee{
+position:absolute;
+right:50px;
+top:150px;
+font-size:40pt;
+list-style-type:none;
+font-family:"Garamond";
+font-weight:bold;
+padding:20px;
+color:#457b9d;
+}
+li p{
+font-size:20pt;
+}
+#www{
+position:absolute;
+left:50px;
+top:200px;
+}
+</style>
+<link rel="icon" href="22.jpg" />
+</head>
+<body>
+<div id="n1">
+<a id="n2" href="file:///D:/%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9/%D9%85%D8%B4%D8%B1%D9%88%D8%B9%201/%D8%AC%D8%B2%D8%A7%D8%B1%D8%A9%20%D8%AD%D8%B3%D9%86%20%D8%A7%D8%AD%D9%85%D8%AF.html">الصفحة الرئيسية</a>
+</div>
+<ul id="ee">
+<li>شمبرى<div><p>بفتيك</p><p>انتركوت</p><p>مفروم</p><p>روستو</p><p>كبدة</p><p>فلتو</p></div></li>
+<li>ضانى<div><p>فخدة ضانى</p><p>كتف ضانى</p><p>ريش ضانى</p><p>رقبة ضانى</p></div></li>
+<li>اكل جاهز<div><p>حوواشى</p><p>مشويات</p><p>برام</p><p>ورقة لحمة</p><p>سندوتشات كفتة</p></div></li>
+</ul>
+<img name="czc" id="www" style="background-color:#f1faee;height:500px;width:500px;z-index:1;border:6px groove #457b9d " />
+<div id="n4">
+<a ><img src="sa.jpeg" id="n5" /></a>
+<a ><img src="saa.jpg" id="n6"/></a>
+<a ><img src="saaa.png" id="n7" /></a>
+</div>
+<script>
+var x=0;
+var arr=["2.jpg","6.jpg","7.jpg","8.jpg","22.jpg","9.jpg","bftek.jpg","111.jpg","fleeto.jpg","fleto.jpg","gzar.jpg","hooshii.jpg","interkkot.jpg","kbda.jpg","kbda1.jpg","kfta.jpg"];
+function ar() {
+document.czc.src=arr[x];
+if (x<arr.length-1){
+x++;
+}
+else{
+x=0;
+}
+setTimeout("ar()",2000);
+}
+ar();
+</script>
+</body>
+</html>
